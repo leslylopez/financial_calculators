@@ -28,7 +28,7 @@ let monthlyPayment = loanAmount* (monthlyInterestRate * Math.pow(1+monthlyIntere
 let totalPayment = monthlyPayment * numberOfPayments;
 let totalInterest = totalPayment - loanAmount;
 
-let message =  "Your monthly payment is " + monthlyPayment.toFixed(2) + " for " + loanTerm + " years. Your total payment is " + totalPayment.toFixed(2) + " and total interest is " + totalInterest.toFixed(2);
+let message =  "Your monthly payment is $ " + monthlyPayment.toFixed(2) + " for " + loanTerm + " years. Your total payment is $ " + totalPayment.toFixed(2) + " and total interest is $ " + totalInterest.toFixed(2);
 document.querySelector ("#calculateMessage").innerHTML =message
 
 }
